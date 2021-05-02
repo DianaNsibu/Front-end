@@ -1,0 +1,236 @@
+html{
+    margin:0;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+h2{
+    text-align: center;
+}
+h4{
+    color: #FF3300; 
+}
+h2,h3,h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+li a {
+    text-decoration: none;
+    font-size:20px;
+    color: white;
+}
+li{
+    list-style: none; 
+}
+a {
+    text-decoration: none;
+    color:#FF3300 ; 
+    font-size: 16px;
+}
+.button{
+    border:1px solid #FF3300;
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 5px;
+}
+.button a:hover {
+    color:#FFFFFF;  
+}
+.button a:active{
+    color: #FF3300;
+}
+
+.button:hover{
+    background-color: #FF3300;
+    border: 1px solid white;
+
+}
+.button:active{
+    background-color:black; 
+    color: #FF3300;
+}
+.about-area-text p{
+    text-align:justify;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+span{
+    color:#FF3300;
+}
+header{
+    height: 100vh;
+    background-image: url(../images/choeur2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header nav{
+    background-color: black;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.header nav ul{
+    padding: 1%;
+}
+.socials{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.social{
+    padding: 20px;
+}
+section{
+    width: 80%;
+    padding: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.area-text{
+    text-align: justify;
+}
+.choriste{
+    border: 1px solid #d9d9d9;
+    /* margin-bottom: 0;*/
+    padding-bottom: 5%;
+    text-align: center;
+}
+#repertoire-carnet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cht-rep{
+    border: 1px solid #d9d9d9;
+    padding: 1%;
+}
+.music-videos{  
+}
+.music-videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.music-video{  
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.video{
+    width: 100%; 
+
+}
+hr{
+    width: 50%;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#box_carnet{
+    border: 1px solid #d9d9d9;
+    width: 80%;
+    padding: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .choeur{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .choriste{
+        width: 45%; 
+    }
+    .repertoire-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cht-rep{
+        width: 40%;
+    }
+    .music-video{
+        width: 80%; 
+
+    }
+    #box_carnet{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;  
+    }
+    .cht-carnet{
+        width: 45%;
+    }
+
+}
+@media screen and (min-width: 1000px){
+    html{
+        font-size: 16px;
+    }
+    header nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    header nav ul{
+        width: 50%;
+    }
+    .music-videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .music-video{
+        width: 45%; 
+
+    }
+}

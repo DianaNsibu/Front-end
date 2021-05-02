@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+li a {
+    text-decoration: none;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:#d3ccc4;
+    font-size:24px;
+}
+li{
+    list-style: none;
+}
+h1{
+    margin: 0;
+    font-size:90px;
+    font-family: 'Ubuntu', sans-serif;
+}
+h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:40px;
+}
+h3{
+    font-family: 'Ubuntu', sans-serif;  
+}
+p{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+footer p {
+    font-weight: 400;
+    font-size: 20px;
+}
+.sub-text{
+    font-size: 16px;
+    font-weight: 300;
+}
+.project-card a {
+    color:black;
+}
+#about h2{
+    margin: 0;  
+}
+#projects h2{
+    text-align: center;
+}
+
+header{
+    height: 100vh;
+    background-color: #d3ccc4;
+    font-size: 24px;
+    color: white;
+}
+header nav{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    margin: 0;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+.hero-area{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-title{
+    /* height: 80%;*/
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+
+}
+.socials{
+    padding-right: 1%;
+}
+.social{
+    margin: 10px;
+}
+#logo{
+    padding-left: 1%;
+}
+.button{
+    width: 150px;
+    height: 55px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 20px; 
+}
+.button:hover{
+    background-color: #d3ccc4;
+    border: 1px solid white;
+    color: white;
+}
+.button:active{
+    background-color:#c1987e; 
+    color: white;
+}
+section{ 
+    border-bottom: 1px solid black;
+}
+#about{
+    padding:5%;
+    display: flex;
+}
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+.headshot{
+    width: 200px; 
+    border-radius: 100px;
+}
+#projects{
+    padding: 5%;
+}
+.project-card{
+    width: 300px;
+    height: 500px;
+    border: 1px solid #d3ccc4;
+    box-shadow: 5px 5px 20px #d3ccc4;
+    text-align: center;
+}
+.project-image{
+    width: 280px;
+    margin-top: 25px;
+    padding: 1%;
+
+}
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.projects-container{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+@media only screen and (max-width:1000px){
+    .projects-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
