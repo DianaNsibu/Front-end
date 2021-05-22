@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Filtre selection</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li></ul>
+            </nav>
+            <h1>Plaisirs sucrés</h1>
+        </header>
+        <main>
+            <section>
+                <ul>
+                    <li class="list" data-filter="all">Tout</li>
+                    <li class="list active" data-filter="bonbon">bonbon</li>
+                    <li class="list" data-filter="patisserie">Pâtisserie</li>
+                    <li class="list" data-filter="chocolat">Chocolat</li>
+                    <li class="list" data-filter="fruit">Fruit</li>
+                </ul>
+                <div class="product">
+                    <div class="itemBox" data-item="bonbon"><img src="./images/bonbon1.png" alt=""></div>
+                    <div class="itemBox" data-item="chocolat"><img src="./images/chocolat1.png" alt=""></div>
+                    <div class="itemBox" data-item="fruit"><img src="./images/fruit1.png" alt=""></div>
+                    <div class="itemBox" data-item="patisserie"><img src="./images/patisserie1.png" alt=""></div>
+                    <div class="itemBox" data-item="bonbon"><img src="./images/bonbon2.png" alt=""></div>
+                    <div class="itemBox" data-item="chocolat"><img src="./images/chocolat2.png" alt=""></div>
+                    <div class="itemBox" data-item="fruit"><img src="./images/fruit2.png" alt=""></div>
+                    <div class="itemBox" data-item="patisserie"><img src="./images/patisserie2.png" alt=""></div>
+                    <div class="itemBox" data-item="bonbon"><img src="./images/bonbon3.png" alt=""></div>
+                    <div class="itemBox" data-item="chocolat"><img src="./images/chocolat3.png" alt=""></div>
+                    <div class="itemBox" data-item="fruit"><img src="./images/fruit3.png" alt=""></div>
+                    <div class="itemBox" data-item="patisserie"><img src="./images/patisserie3.png" alt=""></div>
+                    <div class="itemBox" data-item="bonbon"><img src="./images/bonbon4.png" alt=""></div>
+                    <div class="itemBox" data-item="chocolat"><img src="./images/chocolat4.png" alt=""></div>
+                    <div class="itemBox" data-item="fruit"><img src="./images/fruit4.png" alt=""></div>
+                    <div class="itemBox" data-item="patisserie"><img src="./images/patisserie4.png" alt=""></div>
+                </div>
+            </section>
+        </main>
+        <script>
+            var list = document.querySelectorAll('.list');
+            var itemBox = document.querySelectorAll('.itemBox');
+
+            for(let i=0; i<list.length;i++){
+                //au click sur les LI:
+                list[i].addEventListener('click',function(){
+                    //change la class en active
+                    for(let j=0; j<list.length;j++){
+                        list[j].classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    var dataFilter = this.getAttribute('data-filter');
+
+                    for(let k=0; k<itemBox.length;k++){
+                        //on ajoute la classe hide à tous les elements et on enleve active
+                        itemBox[k].classList.remove('active'); 
+                        itemBox[k].classList.add('hide'); 
+
+                        //si data-item == data-filter en ajoute active a l'element, on enlève hide:
+                        if(itemBox[k].getAttribute('data-item')== dataFilter || dataFilter == "all"){
+                            itemBox[k].classList.remove('hide'); 
+                            itemBox[k].classList.add('active');
+                        }
+                    }
+                });
+            }
+
+
+        </script>
+    </body>
+</html>
