@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Simple Design</title>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Diadème</div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="#" class="link" >Collection</a></li>
+                        <li><a href="#" class="link">Collaboration</a></li>
+                        <li><a href="#" class="link active">Concept</a></li>
+                    </ul>
+                    <div class="shop">Shop(0)</div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Diadème</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, similique molestiae. Ullam ipsum, aspernatur quis. Deserunt recusandae, officia odio, quibusdam doloribus culpa nihil ullam obcaecati tenetur unde eaque vero alias nulla, nesciunt facere deleniti. A.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem nesciunt deleniti mollitia quis vero!</p>
+            </section>
+            <section>
+                <div class="images"><img src="img/chouchou1.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis accusantium tempore debitis perspiciatis maxime quas, nihil quae hic omnis aperiam nesciunt earum, enim est.</p>
+            </section>
+            <section>
+                <h3>01</h3>
+                <div class="ligne"></div>
+                <h3>Des chouchoux</h3>
+                <div class="images"><img src="img/chouchou2.png" alt="" style="margin-bottom:10px">
+                </div>
+                <a href="#" class="btn">Voir plus</a>
+            </section>
+        </main>
+        <footer>
+            <p>Made with Love by Didi Lusa</p>
+        </footer>
+        <script>
+            var links = document.getElementsByClassName('link');
+            for(let i=0; i<links.length;i++){
+                links[i].addEventListener('click',function(e){
+                    //on retire la classe active aux autres: 
+                    for(let j=0; j<links.length;j++){
+                        links[j].classList.remove('active');
+                    }
+                    //on ajoute la classe active à l'element au click
+                    this.classList.add('active');
+                })
+            }
+
+        </script>
+    </body>
+</html>
